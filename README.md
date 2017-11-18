@@ -12,9 +12,9 @@ Simple module concept for redux
 
 ## Build Status
 
-[![npm version](https://badge.fury.io/js/duxtape.svg)](https://badge.fury.io/js/duxtape)<br />
-[![Build Status](https://travis-ci.org/brianneisler/duxtape.svg)](https://travis-ci.org/brianneisler/duxtape)<br />
-[![NPM](https://nodei.co/npm/duxtape.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/duxtape/)
+[![npm version](https://badge.fury.io/js/duxegg.svg)](https://badge.fury.io/js/duxegg)<br />
+[![Build Status](https://travis-ci.org/brianneisler/duxegg.svg)](https://travis-ci.org/brianneisler/duxegg)<br />
+[![NPM](https://nodei.co/npm/duxegg.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/duxegg/)
 
 
 ## Install
