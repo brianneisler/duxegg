@@ -1,0 +1,36 @@
+{
+  "name": "duxegg",
+  "version": "0.0.1",
+  "description": "Simple module concept for redux",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianneisler/duxegg"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "clean": "./scripts/clean.sh",
+    "lint": "./scripts/lint.sh",
+    "prepublishOnly": "./scripts/prepublish.sh",
+    "test": "./scripts/test.sh",
+    "watch": "./scripts/watch.sh"
+  },
+  "dependencies": {
+    "mudash": "^0.10.0",
+    "redux-actions": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jest": "^20.0.4",
+    "redux": "^3.7.1"
+  },
+  "peerDependencies": {
+    "redux": "^3.6.0"
+  }
+}
