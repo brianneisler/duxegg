@@ -3,8 +3,8 @@ import { push, reduce } from 'mudash'
 const gatherMiddleware = (modules) => reduce(
   modules,
   (sagas, module) => {
-    if (module.saga) {
-      return push(sagas, module.saga)
+    if (module.middleware) {
+      return push(sagas, module.middleware)
     }
     return sagas
   },
