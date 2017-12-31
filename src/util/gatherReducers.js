@@ -1,14 +1,15 @@
-import { reduce, set } from 'mudash'
+import { assoc, keys, prop, reduce } from 'ramda'
 
 const gatherReducers = (modules) => reduce(
-  modules,
-  (reducers, module, key) => {
-    if (module.reducer) {
-      return set(reducers, key, module.reducer)
+  (reducers, key) => {
+    const { reducer } = prop(key, modules)
+    if (reducer) {
+      return assoc(key, reducer, reducers)
     }
     return reducers
   },
-  {}
+  {},
+  keys(modules)
 )
 
 export default gatherReducers

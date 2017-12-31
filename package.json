@@ -2,22 +2,32 @@
   "name": "duxegg",
   "version": "0.0.2",
   "description": "Simple module concept for redux",
+  "main": "dist/index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/brianneisler/duxegg"
   },
-  "main": "dist/index.js",
+  "author": "Brian Neisler <hello@brianneisler.com>",
+  "homepage": "https://github.com/brianneisler/duxegg",
+  "bugs": {
+    "url": "https://github.com/brianneisler/duxegg/issues"
+  },
+  "keywords": [
+    "modules",
+    "redux"
+  ],
   "scripts": {
     "build": "./scripts/build.sh",
     "clean": "./scripts/clean.sh",
+    "cleanse": "./scripts/cleanse.sh",
     "lint": "./scripts/lint.sh",
     "prepublishOnly": "./scripts/prepublish.sh",
     "test": "./scripts/test.sh",
     "watch": "./scripts/watch.sh"
   },
   "dependencies": {
-    "mudash": "^0.10.0",
+    "ramda": "^0.25.0",
     "redux-actions": "^2.2.1"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { compose } from 'mudash'
+import { compose } from 'ramda'
 import { createStore } from 'redux'
 
 const composeStore = (reducer, enhancers) => compose(

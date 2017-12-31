@@ -8,9 +8,10 @@
 *NOTE:* we recommend using nvm
 ```sh
 brew install nvm
-nvm install 8.5
-nvm use 8.5
+nvm install 8
+nvm use 8
 ```
+
 
 ## Setup
 
@@ -20,6 +21,7 @@ cd duxegg
 npm install
 ```
 
+
 ## Build
 
 To build duxegg
@@ -27,6 +29,16 @@ To build duxegg
 ```sh
 npm run build
 ```
+
+
+## Clean
+
+To clean duxegg
+
+```sh
+npm run clean
+```
+
 
 ## Watch
 
