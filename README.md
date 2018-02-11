@@ -33,8 +33,14 @@ import { Provider } from 'react-redux'
 import { createStore } from 'duxegg'
 import * as modules from './modules'
 
+const config = {
+  foo: { // config passed to module is based on name of module
+    key: 'value'
+  }
+}
+
 const App = () =>
-  <Provider store={createStore(modules)}>
+  <Provider store={createStore(modules, config)}>
     ...
   </Provider>
 
@@ -54,19 +60,23 @@ export {
 import { handleActions } from 'redux-actions'
 import createSagaMiddleware from 'redux-saga'
 
-const middleware = createSagaMiddleware()
+const module = (config) => {
+  const middleware = createSagaMiddleware()
 
-const reducer = handleActions({
-  ...
-})
+  const reducer = handleActions({
+    ...
+  })
 
-const saga = function* saga() {
-  ...
+  const saga = function* saga() {
+    ...
+  }
+
+  return {
+    middleware,
+    reducer,
+    saga
+  }
 }
 
-export {
-  middleware,
-  reducer,
-  saga
-}
+export default module
 ```

@@ -31,13 +31,13 @@
     "redux-actions": "^2.2.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^4.3.0",
-    "eslint-config-airbnb-base": "^11.3.0",
-    "eslint-plugin-import": "^2.7.0",
-    "jest": "^20.0.4",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.0.6",
     "redux": "^3.7.1"
   },
   "peerDependencies": {

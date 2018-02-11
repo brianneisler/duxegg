@@ -29,5 +29,3 @@ tmp
 dist
 .env
 .eslintcache
-yarn.lock
-default.etcd

@@ -3,10 +3,10 @@ import { forEachObjIndexed, is } from 'ramda'
 const runStore = (store) => {
   const modules = store.getModules()
   forEachObjIndexed(
-    (module, name) => {
+    (module) => {
       const { run } = module
       if (is(Function, run)) {
-        run(module, name, modules)
+        run(modules)
       }
     },
     modules
