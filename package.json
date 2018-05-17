@@ -23,6 +23,7 @@
     "cleanse": "./scripts/cleanse.sh",
     "lint": "./scripts/lint.sh",
     "prepublishOnly": "./scripts/prepublish.sh",
+    "setup": "./scripts/setup.sh",
     "test": "./scripts/test.sh",
     "watch": "./scripts/watch.sh"
   },
@@ -39,9 +40,9 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "jest": "^22.0.6",
-    "redux": "^3.7.1"
+    "redux": "^4.0.0"
   },
   "peerDependencies": {
-    "redux": "^3.6.0"
+    "redux": ">=0.10 <5"
   }
 }

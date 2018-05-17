@@ -1,6 +1,6 @@
 import buildModules from './buildModules'
 
-test('adds 1 + 2 to equal 3', () => {
+test('buildModules correctly combines modules', () => {
   const modules = {
     foo: {
       module: (config) => {
