@@ -1,6 +1,6 @@
 import { assoc, keys, prop, reduce } from 'ramda'
 
-const gatherReducers = (modules) => reduce(
+const filterReducers = (modules) => reduce(
   (reducers, key) => {
     const { reducer } = prop(key, modules)
     if (reducer) {
@@ -12,4 +12,4 @@ const gatherReducers = (modules) => reduce(
   keys(modules)
 )
 
-export default gatherReducers
+export default filterReducers

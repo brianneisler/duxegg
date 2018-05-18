@@ -1,6 +1,6 @@
 import { append, reduce, values } from 'ramda'
 
-const gatherMiddleware = (modules) => reduce(
+const filterMiddleware = (modules) => reduce(
   (middlewares, module) => {
     const { middleware } = module
     if (middleware) {
@@ -12,4 +12,4 @@ const gatherMiddleware = (modules) => reduce(
   values(modules)
 )
 
-export default gatherMiddleware
+export default filterMiddleware

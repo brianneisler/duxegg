@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
 import composeStore from './composeStore'
-import gatherEnhancers from './gatherEnhancers'
-import gatherReducers from './gatherReducers'
+import filterEnhancers from './filterEnhancers'
+import filterReducers from './filterReducers'
 
 const buildStore = (modules) =>
   composeStore(
-    combineReducers(gatherReducers(modules)),
-    gatherEnhancers(modules)
+    combineReducers(filterReducers(modules)),
+    filterEnhancers(modules)
   )
 
 export default buildStore

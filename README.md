@@ -71,6 +71,13 @@ const module = (config) => {
     ...
   }
 
+  const run = (store) => {
+    // store is a redux store with an additional getModules method
+    const modules = store.getModules()
+
+    // do whatever you need to boot up this module or process some value from the other modules
+  }
+
   return {
     middleware,
     reducer,
@@ -78,5 +85,7 @@ const module = (config) => {
   }
 }
 
-export default module
+export {
+  module
+}
 ```
