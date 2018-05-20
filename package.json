@@ -1,6 +1,6 @@
 {
   "name": "duxegg",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple module concept for redux",
   "main": "dist/index.js",
   "license": "MIT",
