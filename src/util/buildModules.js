@@ -8,7 +8,7 @@ const buildModules = (modules, config) => mapObjIndexed((mod, name) => {
   if (is(Function, modBuilder)) {
     return modBuilder(prop(name, config))
   }
-  return mod
+  return modBuilder
 }, modules)
 
 export default buildModules

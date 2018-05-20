@@ -17,6 +17,11 @@ test('buildModules correctly combines modules', () => {
           prop: 'bar'
         }
       }
+    },
+    baz: {
+      module: {
+        prop: 'baz'
+      }
     }
   }
   const config = {
@@ -28,6 +33,9 @@ test('buildModules correctly combines modules', () => {
     },
     bar: {
       prop: 'bar'
+    },
+    baz: {
+      prop: 'baz'
     }
   })
 })
