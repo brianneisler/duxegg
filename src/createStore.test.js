@@ -34,6 +34,9 @@ describe('createStore', () => {
         reducer: testReducer
       }
     })
+    expect(store.getConfig()).toEqual({
+      foo: 'abc'
+    })
 
     store.dispatch(testAction)
     const state = store.getState()
